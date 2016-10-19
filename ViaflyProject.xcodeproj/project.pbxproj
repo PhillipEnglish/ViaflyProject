@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DD1DB8400400B17FFC /* AppDelegate.swift */; };
+		C39174E01DB8400400B17FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* ViewController.swift */; };
+		C39174E31DB8400400B17FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E11DB8400400B17FFC /* Main.storyboard */; };
+		C39174E51DB8400400B17FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39174E41DB8400400B17FFC /* Assets.xcassets */; };
+		C39174E81DB8400400B17FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */; };
+		C39174F31DB8400500B17FFC /* ViaflyProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174F21DB8400500B17FFC /* ViaflyProjectTests.swift */; };
+		C39174FE1DB8400500B17FFC /* ViaflyProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C39174EF1DB8400500B17FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39174D21DB8400400B17FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39174D91DB8400400B17FFC;
+			remoteInfo = ViaflyProject;
+		};
+		C39174FA1DB8400500B17FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39174D21DB8400400B17FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39174D91DB8400400B17FFC;
+			remoteInfo = ViaflyProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C39174DA1DB8400400B17FFC /* ViaflyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaflyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39174DD1DB8400400B17FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C39174DF1DB8400400B17FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C39174E21DB8400400B17FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C39174E41DB8400400B17FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C39174E71DB8400400B17FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C39174E91DB8400400B17FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39174EE1DB8400500B17FFC /* ViaflyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViaflyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39174F21DB8400500B17FFC /* ViaflyProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaflyProjectTests.swift; sourceTree = "<group>"; };
+		C39174F41DB8400500B17FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39174F91DB8400500B17FFC /* ViaflyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViaflyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaflyProjectUITests.swift; sourceTree = "<group>"; };
+		C39174FF1DB8400500B17FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C39174D71DB8400400B17FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39174EB1DB8400500B17FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39174F61DB8400500B17FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C39174D11DB8400400B17FFC = {
+			isa = PBXGroup;
+			children = (
+				C39174DC1DB8400400B17FFC /* ViaflyProject */,
+				C39174F11DB8400500B17FFC /* ViaflyProjectTests */,
+				C39174FC1DB8400500B17FFC /* ViaflyProjectUITests */,
+				C39174DB1DB8400400B17FFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C39174DB1DB8400400B17FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C39174DA1DB8400400B17FFC /* ViaflyProject.app */,
+				C39174EE1DB8400500B17FFC /* ViaflyProjectTests.xctest */,
+				C39174F91DB8400500B17FFC /* ViaflyProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C39174DC1DB8400400B17FFC /* ViaflyProject */ = {
+			isa = PBXGroup;
+			children = (
+				C39174DD1DB8400400B17FFC /* AppDelegate.swift */,
+				C39174DF1DB8400400B17FFC /* ViewController.swift */,
+				C39174E11DB8400400B17FFC /* Main.storyboard */,
+				C39174E41DB8400400B17FFC /* Assets.xcassets */,
+				C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */,
+				C39174E91DB8400400B17FFC /* Info.plist */,
+			);
+			path = ViaflyProject;
+			sourceTree = "<group>";
+		};
+		C39174F11DB8400500B17FFC /* ViaflyProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				C39174F21DB8400500B17FFC /* ViaflyProjectTests.swift */,
+				C39174F41DB8400500B17FFC /* Info.plist */,
+			);
+			path = ViaflyProjectTests;
+			sourceTree = "<group>";
+		};
+		C39174FC1DB8400500B17FFC /* ViaflyProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */,
+				C39174FF1DB8400500B17FFC /* Info.plist */,
+			);
+			path = ViaflyProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C39174D91DB8400400B17FFC /* ViaflyProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39175021DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProject" */;
+			buildPhases = (
+				C39174D61DB8400400B17FFC /* Sources */,
+				C39174D71DB8400400B17FFC /* Frameworks */,
+				C39174D81DB8400400B17FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViaflyProject;
+			productName = ViaflyProject;
+			productReference = C39174DA1DB8400400B17FFC /* ViaflyProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C39174ED1DB8400500B17FFC /* ViaflyProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39175051DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProjectTests" */;
+			buildPhases = (
+				C39174EA1DB8400500B17FFC /* Sources */,
+				C39174EB1DB8400500B17FFC /* Frameworks */,
+				C39174EC1DB8400500B17FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39174F01DB8400500B17FFC /* PBXTargetDependency */,
+			);
+			name = ViaflyProjectTests;
+			productName = ViaflyProjectTests;
+			productReference = C39174EE1DB8400500B17FFC /* ViaflyProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C39174F81DB8400500B17FFC /* ViaflyProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39175081DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProjectUITests" */;
+			buildPhases = (
+				C39174F51DB8400500B17FFC /* Sources */,
+				C39174F61DB8400500B17FFC /* Frameworks */,
+				C39174F71DB8400500B17FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39174FB1DB8400500B17FFC /* PBXTargetDependency */,
+			);
+			name = ViaflyProjectUITests;
+			productName = ViaflyProjectUITests;
+			productReference = C39174F91DB8400500B17FFC /* ViaflyProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C39174D21DB8400400B17FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Vitki Arts";
+				TargetAttributes = {
+					C39174D91DB8400400B17FFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5P4CM4ZFAJ;
+						ProvisioningStyle = Automatic;
+					};
+					C39174ED1DB8400500B17FFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5P4CM4ZFAJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C39174D91DB8400400B17FFC;
+					};
+					C39174F81DB8400500B17FFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5P4CM4ZFAJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C39174D91DB8400400B17FFC;
+					};
+				};
+			};
+			buildConfigurationList = C39174D51DB8400400B17FFC /* Build configuration list for PBXProject "ViaflyProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C39174D11DB8400400B17FFC;
+			productRefGroup = C39174DB1DB8400400B17FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C39174D91DB8400400B17FFC /* ViaflyProject */,
+				C39174ED1DB8400500B17FFC /* ViaflyProjectTests */,
+				C39174F81DB8400500B17FFC /* ViaflyProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C39174D81DB8400400B17FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39174E81DB8400400B17FFC /* LaunchScreen.storyboard in Resources */,
+				C39174E51DB8400400B17FFC /* Assets.xcassets in Resources */,
+				C39174E31DB8400400B17FFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39174EC1DB8400500B17FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39174F71DB8400500B17FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C39174D61DB8400400B17FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39174E01DB8400400B17FFC /* ViewController.swift in Sources */,
+				C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39174EA1DB8400500B17FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39174F31DB8400500B17FFC /* ViaflyProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39174F51DB8400500B17FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39174FE1DB8400500B17FFC /* ViaflyProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C39174F01DB8400500B17FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39174D91DB8400400B17FFC /* ViaflyProject */;
+			targetProxy = C39174EF1DB8400500B17FFC /* PBXContainerItemProxy */;
+		};
+		C39174FB1DB8400500B17FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39174D91DB8400400B17FFC /* ViaflyProject */;
+			targetProxy = C39174FA1DB8400500B17FFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C39174E11DB8400400B17FFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39174E21DB8400400B17FFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39174E71DB8400400B17FFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C39175001DB8400500B17FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C39175011DB8400500B17FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C39175031DB8400500B17FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				INFOPLIST_FILE = ViaflyProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C39175041DB8400500B17FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				INFOPLIST_FILE = ViaflyProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C39175061DB8400500B17FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				INFOPLIST_FILE = ViaflyProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViaflyProject.app/ViaflyProject";
+			};
+			name = Debug;
+		};
+		C39175071DB8400500B17FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				INFOPLIST_FILE = ViaflyProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViaflyProject.app/ViaflyProject";
+			};
+			name = Release;
+		};
+		C39175091DB8400500B17FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				INFOPLIST_FILE = ViaflyProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ViaflyProject;
+			};
+			name = Debug;
+		};
+		C391750A1DB8400500B17FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				INFOPLIST_FILE = ViaflyProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ViaflyProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C39174D51DB8400400B17FFC /* Build configuration list for PBXProject "ViaflyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39175001DB8400500B17FFC /* Debug */,
+				C39175011DB8400500B17FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39175021DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39175031DB8400500B17FFC /* Debug */,
+				C39175041DB8400500B17FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C39175051DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39175061DB8400500B17FFC /* Debug */,
+				C39175071DB8400500B17FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C39175081DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39175091DB8400500B17FFC /* Debug */,
+				C391750A1DB8400500B17FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C39174D21DB8400400B17FFC /* Project object */;
+}
