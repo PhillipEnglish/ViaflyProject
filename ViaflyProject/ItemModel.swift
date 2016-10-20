@@ -15,10 +15,11 @@ struct ItemModel {
     let qty: Int
     let category: ItemCategory
     
-    init(upc: String, item: String, qty: Int, category: String) {
+    init(upc: String, item: String, qty: String, category: String) {
         self.upc = upc
         self.item = item
-        self.qty = qty
+        //we know there's a qty on each item in csv file. In an app with a less predictable set of data, we may want to make qty and category optionial as opposed to forced unwrapping.
+        self.qty = Int(qty)!
         //initialize category enum from string rawValue via csv file
         self.category = ItemCategory(rawValue: category)!
     }
