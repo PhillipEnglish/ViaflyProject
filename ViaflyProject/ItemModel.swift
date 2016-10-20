@@ -14,8 +14,9 @@ struct ItemModel {
     let item: String
     let qty: Int
     let category: ItemCategory
+    let price: String
     
-    init(upc: String, item: String, qty: String, category: String) {
+    init(upc: String, item: String, qty: String, category: String, price: String) {
         let catFormatted = category.replacingOccurrences(of: "\\", with: "")
         self.upc = upc
         self.item = item
@@ -23,6 +24,7 @@ struct ItemModel {
         self.qty = Int(qty)!
         //initialize category enum from string rawValue via csv file
         self.category = ItemCategory(rawValue: catFormatted)!
+        self.price = price
     }
 }
 

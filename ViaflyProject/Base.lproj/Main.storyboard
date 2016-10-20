@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LD3-L8-i3E">
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p11-LL-Qo7">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -47,17 +50,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LD3-L8-i3E">
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-Pn-Mt8">
+                                <segments>
+                                    <segment title="💲▲"/>
+                                    <segment title="💲▼"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="p11-LL-Qo7" firstAttribute="leading" secondItem="LD3-L8-i3E" secondAttribute="leading" id="44h-VA-BMv"/>
-                            <constraint firstAttribute="trailing" secondItem="p11-LL-Qo7" secondAttribute="trailing" id="6yh-IB-B0s"/>
                             <constraint firstItem="LD3-L8-i3E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C06-dV-T3U"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p11-LL-Qo7" secondAttribute="bottom" constant="40" id="V8Z-td-cNJ"/>
-                            <constraint firstItem="p11-LL-Qo7" firstAttribute="top" secondItem="LD3-L8-i3E" secondAttribute="bottom" id="VjJ-iL-ra0"/>
+                            <constraint firstItem="p11-LL-Qo7" firstAttribute="leading" secondItem="LD3-L8-i3E" secondAttribute="leading" id="CyT-LP-jS8"/>
+                            <constraint firstItem="p11-LL-Qo7" firstAttribute="top" secondItem="LD3-L8-i3E" secondAttribute="bottom" id="DnY-gF-ZqL"/>
+                            <constraint firstItem="0WC-Pn-Mt8" firstAttribute="leading" secondItem="p11-LL-Qo7" secondAttribute="leading" id="GHe-c9-aao"/>
+                            <constraint firstItem="0WC-Pn-Mt8" firstAttribute="trailing" secondItem="p11-LL-Qo7" secondAttribute="trailing" id="NGt-lV-EXm"/>
+                            <constraint firstAttribute="trailing" secondItem="p11-LL-Qo7" secondAttribute="trailing" id="VDS-Ac-4na"/>
+                            <constraint firstItem="0WC-Pn-Mt8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bek-bf-akN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p11-LL-Qo7" secondAttribute="bottom" constant="27" id="bgA-MW-uAh"/>
                             <constraint firstItem="LD3-L8-i3E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jBv-Bs-kNh"/>
                             <constraint firstAttribute="trailing" secondItem="LD3-L8-i3E" secondAttribute="trailing" constant="77" id="okY-fM-O8a"/>
                         </constraints>

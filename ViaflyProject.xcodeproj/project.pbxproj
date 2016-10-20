@@ -22,6 +22,7 @@
 		C366B3CF1DB85F5700484502 /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; };
 		C366B3D01DB85F5700484502 /* HandySwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C366B3D21DB8614900484502 /* Inventory.csv in Resources */ = {isa = PBXBuildFile; fileRef = C366B3D11DB8614900484502 /* Inventory.csv */; };
+		C366B3D41DB91E2400484502 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366B3D31DB91E2400484502 /* ItemCell.swift */; };
 		C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DD1DB8400400B17FFC /* AppDelegate.swift */; };
 		C39174E01DB8400400B17FFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* MainViewController.swift */; };
 		C39174E31DB8400400B17FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E11DB8400400B17FFC /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		C35350321DB84A79008F287A /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		C35350341DB84ACC008F287A /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		C366B3D11DB8614900484502 /* Inventory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Inventory.csv; path = ../../../Downloads/Inventory.csv; sourceTree = "<group>"; };
+		C366B3D31DB91E2400484502 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		C39174DA1DB8400400B17FFC /* ViaflyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaflyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39174DD1DB8400400B17FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39174DF1DB8400400B17FFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C366B3D51DB92CA500484502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C39174E91DB8400400B17FFC /* Info.plist */,
+				C39174DD1DB8400400B17FFC /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C366B3D61DB92CD000484502 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C39174E41DB8400400B17FFC /* Assets.xcassets */,
+				C366B3D11DB8614900484502 /* Inventory.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C366B3D71DB92CED00484502 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C35350321DB84A79008F287A /* ItemModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C366B3D81DB92D3700484502 /* ViewsCells */ = {
+			isa = PBXGroup;
+			children = (
+				C366B3D31DB91E2400484502 /* ItemCell.swift */,
+			);
+			name = ViewsCells;
+			sourceTree = "<group>";
+		};
+		C366B3D91DB92D4F00484502 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C39174DF1DB8400400B17FFC /* MainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C366B3DA1DB9478400484502 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C39174E11DB8400400B17FFC /* Main.storyboard */,
+				C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C366B3DB1DB9479300484502 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C35350341DB84ACC008F287A /* ItemViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		C39174D11DB8400400B17FFC = {
 			isa = PBXGroup;
 			children = (
@@ -167,15 +228,13 @@
 		C39174DC1DB8400400B17FFC /* ViaflyProject */ = {
 			isa = PBXGroup;
 			children = (
-				C366B3D11DB8614900484502 /* Inventory.csv */,
-				C39174DD1DB8400400B17FFC /* AppDelegate.swift */,
-				C39174DF1DB8400400B17FFC /* MainViewController.swift */,
-				C39174E11DB8400400B17FFC /* Main.storyboard */,
-				C39174E41DB8400400B17FFC /* Assets.xcassets */,
-				C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */,
-				C39174E91DB8400400B17FFC /* Info.plist */,
-				C35350321DB84A79008F287A /* ItemModel.swift */,
-				C35350341DB84ACC008F287A /* ItemViewModel.swift */,
+				C366B3D91DB92D4F00484502 /* ViewControllers */,
+				C366B3D71DB92CED00484502 /* Model */,
+				C366B3DB1DB9479300484502 /* ViewModel */,
+				C366B3D81DB92D3700484502 /* ViewsCells */,
+				C366B3DA1DB9478400484502 /* Storyboards */,
+				C366B3D61DB92CD000484502 /* Resources */,
+				C366B3D51DB92CA500484502 /* Supporting Files */,
 			);
 			path = ViaflyProject;
 			sourceTree = "<group>";
@@ -485,6 +544,7 @@
 				C35350351DB84ACC008F287A /* ItemViewModel.swift in Sources */,
 				C39174E01DB8400400B17FFC /* MainViewController.swift in Sources */,
 				C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */,
+				C366B3D41DB91E2400484502 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

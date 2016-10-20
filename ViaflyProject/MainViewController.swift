@@ -26,6 +26,11 @@ class MainViewController: UIViewController {
         
         itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell")) {row, itemModel, cell in
             cell.textLabel?.text = itemModel.item
+            cell.detailTextLabel?.text = itemModel.category.rawValue
+            
+//            var hue: CGFloat
+//            hue = 1 / 196.62 * CGFloat(row)
+//            cell.backgroundColor = UIColor(hue: hue, saturation: 0.33, brightness: 0.85, alpha: 1)
         }
         .addDisposableTo(disposeBag)
     }

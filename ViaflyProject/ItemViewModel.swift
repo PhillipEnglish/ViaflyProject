@@ -27,8 +27,10 @@ class ItemViewModel {
             
             for item in importedItems {
                 print(item)
-                let itemModel = ItemModel(upc: item["UPC"]!, item: item["Item"]!, qty: item["Qty."]!, category: item["Category"]!)
-                self.itemArray.value.append(itemModel)
+                let itemModel = ItemModel(upc: item["UPC"]!, item: item["Item"]!, qty: item["Qty."]!, category: item["Category"]!, price: item["Price"]!)
+                
+                //don't add the item to the presntable array if it's not available. We know all quantities in the csv file, but if scaled to a larger dataset, we want to check that items are not out of stock.
+                if itemModel.qty > 0 {self.itemArray.value.append(itemModel)}
                 print(self.itemArray.value.count)
             }
         }
