@@ -25,10 +25,11 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         itemVM.populateArray()
         
-        itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell")) {
+        itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell", cellType: ItemCell.self)) {
             row, itemModel, cell in
-            cell.textLabel?.text = itemModel.item
-            cell.detailTextLabel?.text = itemModel.price
+            cell.catLabel.text = itemModel.category.rawValue
+            cell.descriptionLabel.text = itemModel.item
+            cell.priceLabel.text = itemModel.price
 //            var hue: CGFloat
 //            hue = 1 / 196.62 * CGFloat(row)
 //            cell.backgroundColor = UIColor(hue: hue, saturation: 0.33, brightness: 0.85, alpha: 1)
@@ -51,11 +52,11 @@ class MainViewController: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             print("first segment clicked")
-            itemVM.itemArray.value.sort{$0.price > $1.price}
+            itemVM.itemArray.value.sort{$0.priceDouble > $1.priceDouble}
 
         case 1:
             print("second segment clicked")
-            itemVM.itemArray.value.sort{$0.price < $1.price}
+            itemVM.itemArray.value.sort{$0.priceDouble < $1.priceDouble}
 
         default:
             break

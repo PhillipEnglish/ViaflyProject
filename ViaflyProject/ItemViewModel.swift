@@ -33,7 +33,7 @@ class ItemViewModel {
                 if itemModel.qty > 0 {self.itemArray.value.append(itemModel)}
                 print(self.itemArray.value.count)
             }
-            self.itemArray.value.sort{$0.price > $1.price}
+            self.itemArray.value.sort{$0.priceDouble > $1.priceDouble}
         }
     }
 
