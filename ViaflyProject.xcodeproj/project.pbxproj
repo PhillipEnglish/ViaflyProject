@@ -21,6 +21,7 @@
 		C366B3CE1DB85F5100484502 /* FileKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C353502E1DB846AB008F287A /* FileKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C366B3CF1DB85F5700484502 /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; };
 		C366B3D01DB85F5700484502 /* HandySwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C366B3D21DB8614900484502 /* Inventory.csv in Resources */ = {isa = PBXBuildFile; fileRef = C366B3D11DB8614900484502 /* Inventory.csv */; };
 		C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DD1DB8400400B17FFC /* AppDelegate.swift */; };
 		C39174E01DB8400400B17FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* ViewController.swift */; };
 		C39174E31DB8400400B17FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E11DB8400400B17FFC /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		C35350301DB846B6008F287A /* HandySwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HandySwift.framework; path = Carthage/Build/iOS/HandySwift.framework; sourceTree = "<group>"; };
 		C35350321DB84A79008F287A /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		C35350341DB84ACC008F287A /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		C366B3D11DB8614900484502 /* Inventory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Inventory.csv; path = ../../../Downloads/Inventory.csv; sourceTree = "<group>"; };
 		C39174DA1DB8400400B17FFC /* ViaflyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaflyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39174DD1DB8400400B17FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39174DF1DB8400400B17FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		C39174DC1DB8400400B17FFC /* ViaflyProject */ = {
 			isa = PBXGroup;
 			children = (
+				C366B3D11DB8614900484502 /* Inventory.csv */,
 				C39174DD1DB8400400B17FFC /* AppDelegate.swift */,
 				C39174DF1DB8400400B17FFC /* ViewController.swift */,
 				C39174E11DB8400400B17FFC /* Main.storyboard */,
@@ -327,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C366B3D21DB8614900484502 /* Inventory.csv in Resources */,
 				C39174E81DB8400400B17FFC /* LaunchScreen.storyboard in Resources */,
 				C39174E51DB8400400B17FFC /* Assets.xcassets in Resources */,
 				C39174E31DB8400400B17FFC /* Main.storyboard in Resources */,
