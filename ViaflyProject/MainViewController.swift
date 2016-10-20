@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
             cell.catLabel.text = itemModel.category.rawValue
             cell.descriptionLabel.text = itemModel.item
             cell.priceLabel.text = itemModel.price
+            cell.qtyLabel.text = String(itemModel.qty)
 //            var hue: CGFloat
 //            hue = 1 / 196.62 * CGFloat(row)
 //            cell.backgroundColor = UIColor(hue: hue, saturation: 0.33, brightness: 0.85, alpha: 1)

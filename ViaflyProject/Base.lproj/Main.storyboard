@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,42 +34,62 @@
                                             <frame key="frameInset" width="375" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oE-1E-5mR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oE-1E-5mR">
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnU-lL-gST">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnU-lL-gST">
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGS-wW-jGv">
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left in Stock:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vM8-31-1Dq">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="79" id="NHc-gj-8tR"/>
+                                                        <constraint firstAttribute="width" constant="53" id="Hgt-On-k2s"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="9"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra2-2R-kaQ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="23" id="7sL-3N-2bM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="firstBaseline" secondItem="MGS-wW-jGv" secondAttribute="firstBaseline" id="QGI-DZ-ac2"/>
-                                                <constraint firstItem="qnU-lL-gST" firstAttribute="centerY" secondItem="OGm-yE-1lh" secondAttribute="centerY" id="Vel-0E-vZe"/>
-                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="centerY" secondItem="qnU-lL-gST" secondAttribute="centerY" id="WYC-7g-InO"/>
-                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="leading" secondItem="1oE-1E-5mR" secondAttribute="trailing" id="evm-tw-1GE"/>
-                                                <constraint firstAttribute="trailing" secondItem="MGS-wW-jGv" secondAttribute="trailing" id="kkd-Ar-DTo"/>
-                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="top" secondItem="OGm-yE-1lh" secondAttribute="topMargin" id="qvs-sB-NM2"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="qnU-lL-gST" secondAttribute="bottom" constant="22.5" id="rrS-BR-YbU"/>
-                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="leading" secondItem="qnU-lL-gST" secondAttribute="leading" id="sGc-9m-qUu"/>
-                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="trailing" secondItem="qnU-lL-gST" secondAttribute="trailing" id="uqe-L0-bP1"/>
-                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="leading" secondItem="OGm-yE-1lh" secondAttribute="leadingMargin" id="zL0-Ld-KcQ"/>
+                                                <constraint firstItem="qnU-lL-gST" firstAttribute="leading" secondItem="vM8-31-1Dq" secondAttribute="leading" id="6JG-8Y-T0W"/>
+                                                <constraint firstItem="ra2-2R-kaQ" firstAttribute="top" secondItem="MGS-wW-jGv" secondAttribute="bottom" constant="48" id="7d5-95-pCJ"/>
+                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="top" secondItem="OGm-yE-1lh" secondAttribute="topMargin" id="B7g-3Z-9Ig"/>
+                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="baseline" secondItem="1oE-1E-5mR" secondAttribute="firstBaseline" id="If2-kg-KT1"/>
+                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="leading" secondItem="qnU-lL-gST" secondAttribute="leading" id="MzG-yc-K35"/>
+                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="bottom" secondItem="OGm-yE-1lh" secondAttribute="bottomMargin" id="SoU-zn-ab2"/>
+                                                <constraint firstAttribute="trailing" secondItem="MGS-wW-jGv" secondAttribute="trailing" id="Us6-TL-L7T"/>
+                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="leading" secondItem="OGm-yE-1lh" secondAttribute="leadingMargin" id="V09-Vt-txP"/>
+                                                <constraint firstItem="vM8-31-1Dq" firstAttribute="top" secondItem="qnU-lL-gST" secondAttribute="bottom" constant="2" id="VsH-5i-YtI"/>
+                                                <constraint firstItem="vM8-31-1Dq" firstAttribute="top" secondItem="ra2-2R-kaQ" secondAttribute="top" id="k0P-AX-TOc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ra2-2R-kaQ" secondAttribute="trailing" constant="-6" id="o8x-UO-gur"/>
+                                                <constraint firstItem="ra2-2R-kaQ" firstAttribute="leading" secondItem="vM8-31-1Dq" secondAttribute="trailing" constant="1" id="oK5-Yh-K6N"/>
+                                                <constraint firstItem="vM8-31-1Dq" firstAttribute="bottom" secondItem="ra2-2R-kaQ" secondAttribute="bottom" id="rf9-LB-d46"/>
+                                                <constraint firstItem="1oE-1E-5mR" firstAttribute="centerY" secondItem="qnU-lL-gST" secondAttribute="centerY" id="uGh-2s-NkD"/>
+                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="trailing" secondItem="qnU-lL-gST" secondAttribute="trailing" id="vps-F4-RLJ"/>
+                                                <constraint firstItem="MGS-wW-jGv" firstAttribute="leading" secondItem="1oE-1E-5mR" secondAttribute="trailing" id="xpY-C5-qrt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="catLabel" destination="MGS-wW-jGv" id="5Tu-II-GVz"/>
                                             <outlet property="descriptionLabel" destination="1oE-1E-5mR" id="agb-DY-tYm"/>
                                             <outlet property="priceLabel" destination="qnU-lL-gST" id="yHU-1Q-mzY"/>
+                                            <outlet property="qtyLabel" destination="ra2-2R-kaQ" id="bVN-8b-5kb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

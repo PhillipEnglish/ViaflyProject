@@ -13,6 +13,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var catLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var qtyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
