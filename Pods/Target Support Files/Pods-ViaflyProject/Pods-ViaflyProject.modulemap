@@ -1,0 +1,6 @@
+framework module Pods_ViaflyProject {
+  umbrella header "Pods-ViaflyProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

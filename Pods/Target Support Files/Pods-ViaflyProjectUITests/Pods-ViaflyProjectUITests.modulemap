@@ -1,0 +1,6 @@
+framework module Pods_ViaflyProjectUITests {
+  umbrella header "Pods-ViaflyProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
