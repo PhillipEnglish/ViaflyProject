@@ -16,12 +16,13 @@ struct ItemModel {
     let category: ItemCategory
     
     init(upc: String, item: String, qty: String, category: String) {
+        let catFormatted = category.replacingOccurrences(of: "\\", with: "")
         self.upc = upc
         self.item = item
         //we know there's a qty on each item in csv file. In an app with a less predictable set of data, we may want to make qty and category optionial as opposed to forced unwrapping.
         self.qty = Int(qty)!
         //initialize category enum from string rawValue via csv file
-        self.category = ItemCategory(rawValue: category)!
+        self.category = ItemCategory(rawValue: catFormatted)!
     }
 }
 

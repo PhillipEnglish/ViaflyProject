@@ -9,7 +9,7 @@
 import Foundation
 import CSVImporter
 
-struct ItemViewModel {
+class ItemViewModel {
     
     var itemArray: [ItemModel] = []
     
@@ -20,12 +20,13 @@ struct ItemViewModel {
             
             print(headerValues) // => ["firstName", "lastName"]
             
-        }) { $0 }.onFinish { importedRecords in
+        }) { $0 }.onFinish { importedItems in
             
-            for record in importedRecords {
-                print(record) // => e.g. ["firstName": "Harry", "lastName": "Potter"]
-               // print(record["firstName"]) // prints "Harry" on first, "Hermione" on second run
-               // print(record["lastName"]) // prints "Potter" on first, "Granger" on second run
+            for item in importedItems {
+                print(item)
+                let itemModel = ItemModel(upc: item["UPC"]!, item: item["Item"]!, qty: item["Qty."]!, category: item["Category"]!)
+                self.itemArray.append(itemModel)
+                print(self.itemArray.count)
             }
         }
     }
