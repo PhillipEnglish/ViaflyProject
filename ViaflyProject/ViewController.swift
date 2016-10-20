@@ -12,12 +12,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    let itemVM = ItemViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        itemVM.populateArray()
     }
 
     override func didReceiveMemoryWarning() {

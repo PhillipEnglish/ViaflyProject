@@ -15,6 +15,12 @@
 		C35350311DB846B6008F287A /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; };
 		C35350331DB84A79008F287A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35350321DB84A79008F287A /* ItemModel.swift */; };
 		C35350351DB84ACC008F287A /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35350341DB84ACC008F287A /* ItemViewModel.swift */; };
+		C366B3CA1DB85F2F00484502 /* CSVImporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C353502C1DB846A3008F287A /* CSVImporter.framework */; };
+		C366B3CB1DB85F2F00484502 /* CSVImporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C353502C1DB846A3008F287A /* CSVImporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C366B3CD1DB85F5100484502 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C353502E1DB846AB008F287A /* FileKit.framework */; };
+		C366B3CE1DB85F5100484502 /* FileKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C353502E1DB846AB008F287A /* FileKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C366B3CF1DB85F5700484502 /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; };
+		C366B3D01DB85F5700484502 /* HandySwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DD1DB8400400B17FFC /* AppDelegate.swift */; };
 		C39174E01DB8400400B17FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* ViewController.swift */; };
 		C39174E31DB8400400B17FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E11DB8400400B17FFC /* Main.storyboard */; };
@@ -40,6 +46,22 @@
 			remoteInfo = ViaflyProject;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C366B3CC1DB85F2F00484502 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C366B3D01DB85F5700484502 /* HandySwift.framework in Embed Frameworks */,
+				C366B3CB1DB85F2F00484502 /* CSVImporter.framework in Embed Frameworks */,
+				C366B3CE1DB85F5100484502 /* FileKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1453D83797B5249334CC3197 /* Pods-ViaflyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectUITests/Pods-ViaflyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,9 +99,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E2E192C88A4E4B93E386A2 /* Pods_ViaflyProject.framework in Frameworks */,
+				C366B3CF1DB85F5700484502 /* HandySwift.framework in Frameworks */,
 				C353502D1DB846A3008F287A /* CSVImporter.framework in Frameworks */,
 				C353502F1DB846AB008F287A /* FileKit.framework in Frameworks */,
 				C35350311DB846B6008F287A /* HandySwift.framework in Frameworks */,
+				C366B3CA1DB85F2F00484502 /* CSVImporter.framework in Frameworks */,
+				C366B3CD1DB85F5100484502 /* FileKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +221,7 @@
 				C39174D81DB8400400B17FFC /* Resources */,
 				1FDB0D7F96386748BCF305D6 /* [CP] Embed Pods Frameworks */,
 				B6EEBA64ED4205745BB56B65 /* [CP] Copy Pods Resources */,
+				C366B3CC1DB85F2F00484502 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,12 +553,14 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -576,12 +604,14 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -604,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F7B5B6B2BB7EA2243B996D6 /* Pods-ViaflyProject.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -622,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F72CBC3EBAB69233760A955 /* Pods-ViaflyProject.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
 				FRAMEWORK_SEARCH_PATHS = (
