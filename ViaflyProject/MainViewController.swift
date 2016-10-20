@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentedController: UISegmentedControl!
     
     let itemVM = ItemViewModel()
     let disposeBag = DisposeBag()
@@ -24,15 +25,16 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         itemVM.populateArray()
         
-        itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell")) {row, itemModel, cell in
+        itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell")) {
+            row, itemModel, cell in
             cell.textLabel?.text = itemModel.item
-            cell.detailTextLabel?.text = itemModel.category.rawValue
-            
+            cell.detailTextLabel?.text = itemModel.price
 //            var hue: CGFloat
 //            hue = 1 / 196.62 * CGFloat(row)
 //            cell.backgroundColor = UIColor(hue: hue, saturation: 0.33, brightness: 0.85, alpha: 1)
         }
         .addDisposableTo(disposeBag)
+        
     }
     
     
@@ -41,6 +43,25 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+ 
+    
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            print("first segment clicked")
+            itemVM.itemArray.value.sort{$0.price > $1.price}
 
+        case 1:
+            print("second segment clicked")
+            itemVM.itemArray.value.sort{$0.price < $1.price}
+
+        default:
+            break
+        }
+    }
+   
 }
+
 

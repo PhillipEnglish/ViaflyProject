@@ -28,18 +28,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dL0-76-XQi" id="OGm-yE-1lh">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w4x-K4-Ggc">
-                                                    <frame key="frameInset" minX="15" minY="11" width="34" height="21"/>
+                                                    <frame key="frameInset" minX="15" minY="12" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62D-PY-yzZ">
-                                                    <frame key="frameInset" minX="316" minY="11" width="44" height="21"/>
+                                                    <frame key="frameInset" minX="316" minY="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -50,12 +50,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-Pn-Mt8">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-Pn-Mt8">
                                 <segments>
                                     <segment title="💲▲"/>
                                     <segment title="💲▼"/>
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="enableSegment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Opb-Yb-jMF"/>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FXA-NO-hpH"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +78,7 @@
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="LD3-L8-i3E" id="oCI-0f-7Dx"/>
+                        <outlet property="segmentedController" destination="0WC-Pn-Mt8" id="4nm-4x-YVG"/>
                         <outlet property="tableView" destination="p11-LL-Qo7" id="rCM-XM-cF8"/>
                     </connections>
                 </viewController>
