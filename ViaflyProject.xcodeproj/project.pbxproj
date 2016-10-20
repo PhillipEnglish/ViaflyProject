@@ -23,7 +23,7 @@
 		C366B3D01DB85F5700484502 /* HandySwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C366B3D21DB8614900484502 /* Inventory.csv in Resources */ = {isa = PBXBuildFile; fileRef = C366B3D11DB8614900484502 /* Inventory.csv */; };
 		C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DD1DB8400400B17FFC /* AppDelegate.swift */; };
-		C39174E01DB8400400B17FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* ViewController.swift */; };
+		C39174E01DB8400400B17FFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* MainViewController.swift */; };
 		C39174E31DB8400400B17FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E11DB8400400B17FFC /* Main.storyboard */; };
 		C39174E51DB8400400B17FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39174E41DB8400400B17FFC /* Assets.xcassets */; };
 		C39174E81DB8400400B17FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */; };
@@ -82,7 +82,7 @@
 		C366B3D11DB8614900484502 /* Inventory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Inventory.csv; path = ../../../Downloads/Inventory.csv; sourceTree = "<group>"; };
 		C39174DA1DB8400400B17FFC /* ViaflyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaflyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39174DD1DB8400400B17FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C39174DF1DB8400400B17FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C39174DF1DB8400400B17FFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C39174E21DB8400400B17FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C39174E41DB8400400B17FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39174E71DB8400400B17FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 			children = (
 				C366B3D11DB8614900484502 /* Inventory.csv */,
 				C39174DD1DB8400400B17FFC /* AppDelegate.swift */,
-				C39174DF1DB8400400B17FFC /* ViewController.swift */,
+				C39174DF1DB8400400B17FFC /* MainViewController.swift */,
 				C39174E11DB8400400B17FFC /* Main.storyboard */,
 				C39174E41DB8400400B17FFC /* Assets.xcassets */,
 				C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */,
@@ -483,7 +483,7 @@
 			files = (
 				C35350331DB84A79008F287A /* ItemModel.swift in Sources */,
 				C35350351DB84ACC008F287A /* ItemViewModel.swift in Sources */,
-				C39174E01DB8400400B17FFC /* ViewController.swift in Sources */,
+				C39174E01DB8400400B17FFC /* MainViewController.swift in Sources */,
 				C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,10 +8,13 @@
 
 import Foundation
 import CSVImporter
+import RxSwift
+import RxCocoa
 
 class ItemViewModel {
     
-    var itemArray: [ItemModel] = []
+    //var itemArray: [ItemModel] = []
+    var itemArray = Variable<[ItemModel]>([])
     
     func populateArray() {
         guard let path = Bundle.main.path(forResource: "Inventory", ofType: "csv") else {return}
@@ -25,8 +28,8 @@ class ItemViewModel {
             for item in importedItems {
                 print(item)
                 let itemModel = ItemModel(upc: item["UPC"]!, item: item["Item"]!, qty: item["Qty."]!, category: item["Category"]!)
-                self.itemArray.append(itemModel)
-                print(self.itemArray.count)
+                self.itemArray.value.append(itemModel)
+                print(self.itemArray.value.count)
             }
         }
     }
