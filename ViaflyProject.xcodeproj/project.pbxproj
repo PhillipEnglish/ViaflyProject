@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F28C34C6211D24A4D2A0B2 /* Pods_ViaflyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81AE26AF634C622688C95EB /* Pods_ViaflyProject.framework */; };
-		BE25E861659E6FE8A9F2F99E /* Pods_ViaflyProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1FD3C260783C2D4E017A64 /* Pods_ViaflyProjectUITests.framework */; };
+		4115F23DCED86C6FF046DC92 /* Pods_ViaflyProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E414D241B9CE83024918AFA /* Pods_ViaflyProjectUITests.framework */; };
+		7040408B5816316955EEBF36 /* Pods_ViaflyProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171CC04C90E2B68222E1465A /* Pods_ViaflyProjectTests.framework */; };
+		80E2E192C88A4E4B93E386A2 /* Pods_ViaflyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C1FD02A546EE19A1EE57EC /* Pods_ViaflyProject.framework */; };
+		C353502D1DB846A3008F287A /* CSVImporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C353502C1DB846A3008F287A /* CSVImporter.framework */; };
+		C353502F1DB846AB008F287A /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C353502E1DB846AB008F287A /* FileKit.framework */; };
+		C35350311DB846B6008F287A /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35350301DB846B6008F287A /* HandySwift.framework */; };
 		C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DD1DB8400400B17FFC /* AppDelegate.swift */; };
 		C39174E01DB8400400B17FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174DF1DB8400400B17FFC /* ViewController.swift */; };
 		C39174E31DB8400400B17FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E11DB8400400B17FFC /* Main.storyboard */; };
@@ -16,7 +20,6 @@
 		C39174E81DB8400400B17FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */; };
 		C39174F31DB8400500B17FFC /* ViaflyProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174F21DB8400500B17FFC /* ViaflyProjectTests.swift */; };
 		C39174FE1DB8400500B17FFC /* ViaflyProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */; };
-		F7CDA344BBF63B1330425823 /* Pods_ViaflyProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5616BE86F1770B8A774BAD4 /* Pods_ViaflyProjectTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F1FD3C260783C2D4E017A64 /* Pods_ViaflyProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaflyProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FD59EF59BF88EBBF8FE083B /* Pods-ViaflyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject.release.xcconfig"; sourceTree = "<group>"; };
-		3BE0FAA83A0CA043093478E7 /* Pods-ViaflyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject.debug.xcconfig"; sourceTree = "<group>"; };
-		4B2198427AB7F0148B0514F8 /* Pods-ViaflyProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		77CAFA0C66006A9FDD30B02A /* Pods-ViaflyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectUITests/Pods-ViaflyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B81AE26AF634C622688C95EB /* Pods_ViaflyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaflyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD9AE2F44A9F641CAF270663 /* Pods-ViaflyProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		1453D83797B5249334CC3197 /* Pods-ViaflyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectUITests/Pods-ViaflyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		171CC04C90E2B68222E1465A /* Pods_ViaflyProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaflyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3C4E3DB4A7B8AB50D7F022 /* Pods-ViaflyProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F72CBC3EBAB69233760A955 /* Pods-ViaflyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject.release.xcconfig"; sourceTree = "<group>"; };
+		37C1FD02A546EE19A1EE57EC /* Pods_ViaflyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaflyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7B5B6B2BB7EA2243B996D6 /* Pods-ViaflyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		74993D04927B8566F8B59F00 /* Pods-ViaflyProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectUITests/Pods-ViaflyProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D68FEE9C6B21DC420E6ED0D /* Pods-ViaflyProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E414D241B9CE83024918AFA /* Pods_ViaflyProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaflyProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C353502C1DB846A3008F287A /* CSVImporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSVImporter.framework; path = Carthage/Build/iOS/CSVImporter.framework; sourceTree = "<group>"; };
+		C353502E1DB846AB008F287A /* FileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FileKit.framework; path = Carthage/Build/iOS/FileKit.framework; sourceTree = "<group>"; };
+		C35350301DB846B6008F287A /* HandySwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HandySwift.framework; path = Carthage/Build/iOS/HandySwift.framework; sourceTree = "<group>"; };
 		C39174DA1DB8400400B17FFC /* ViaflyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaflyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39174DD1DB8400400B17FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39174DF1DB8400400B17FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +65,6 @@
 		C39174F91DB8400500B17FFC /* ViaflyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViaflyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaflyProjectUITests.swift; sourceTree = "<group>"; };
 		C39174FF1DB8400500B17FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0ABCBC2585EA8ED3883D584 /* Pods-ViaflyProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaflyProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViaflyProjectUITests/Pods-ViaflyProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F5616BE86F1770B8A774BAD4 /* Pods_ViaflyProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaflyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F28C34C6211D24A4D2A0B2 /* Pods_ViaflyProject.framework in Frameworks */,
+				80E2E192C88A4E4B93E386A2 /* Pods_ViaflyProject.framework in Frameworks */,
+				C353502D1DB846A3008F287A /* CSVImporter.framework in Frameworks */,
+				C353502F1DB846AB008F287A /* FileKit.framework in Frameworks */,
+				C35350311DB846B6008F287A /* HandySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7CDA344BBF63B1330425823 /* Pods_ViaflyProjectTests.framework in Frameworks */,
+				7040408B5816316955EEBF36 /* Pods_ViaflyProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,24 +91,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE25E861659E6FE8A9F2F99E /* Pods_ViaflyProjectUITests.framework in Frameworks */,
+				4115F23DCED86C6FF046DC92 /* Pods_ViaflyProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7DEE5B7AFD251DAAB13224D3 /* Pods */ = {
+		944C30531FE7D238301BA3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3BE0FAA83A0CA043093478E7 /* Pods-ViaflyProject.debug.xcconfig */,
-				2FD59EF59BF88EBBF8FE083B /* Pods-ViaflyProject.release.xcconfig */,
-				4B2198427AB7F0148B0514F8 /* Pods-ViaflyProjectTests.debug.xcconfig */,
-				BD9AE2F44A9F641CAF270663 /* Pods-ViaflyProjectTests.release.xcconfig */,
-				D0ABCBC2585EA8ED3883D584 /* Pods-ViaflyProjectUITests.debug.xcconfig */,
-				77CAFA0C66006A9FDD30B02A /* Pods-ViaflyProjectUITests.release.xcconfig */,
+				C35350301DB846B6008F287A /* HandySwift.framework */,
+				C353502E1DB846AB008F287A /* FileKit.framework */,
+				C353502C1DB846A3008F287A /* CSVImporter.framework */,
+				37C1FD02A546EE19A1EE57EC /* Pods_ViaflyProject.framework */,
+				171CC04C90E2B68222E1465A /* Pods_ViaflyProjectTests.framework */,
+				8E414D241B9CE83024918AFA /* Pods_ViaflyProjectUITests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C39174D11DB8400400B17FFC = {
@@ -109,8 +118,8 @@
 				C39174F11DB8400500B17FFC /* ViaflyProjectTests */,
 				C39174FC1DB8400500B17FFC /* ViaflyProjectUITests */,
 				C39174DB1DB8400400B17FFC /* Products */,
-				7DEE5B7AFD251DAAB13224D3 /* Pods */,
-				F65EB64CB790BFBE045A262B /* Frameworks */,
+				DE2E691C2D2D08E139BF09ED /* Pods */,
+				944C30531FE7D238301BA3E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,14 +164,17 @@
 			path = ViaflyProjectUITests;
 			sourceTree = "<group>";
 		};
-		F65EB64CB790BFBE045A262B /* Frameworks */ = {
+		DE2E691C2D2D08E139BF09ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B81AE26AF634C622688C95EB /* Pods_ViaflyProject.framework */,
-				F5616BE86F1770B8A774BAD4 /* Pods_ViaflyProjectTests.framework */,
-				0F1FD3C260783C2D4E017A64 /* Pods_ViaflyProjectUITests.framework */,
+				6F7B5B6B2BB7EA2243B996D6 /* Pods-ViaflyProject.debug.xcconfig */,
+				1F72CBC3EBAB69233760A955 /* Pods-ViaflyProject.release.xcconfig */,
+				7D68FEE9C6B21DC420E6ED0D /* Pods-ViaflyProjectTests.debug.xcconfig */,
+				1B3C4E3DB4A7B8AB50D7F022 /* Pods-ViaflyProjectTests.release.xcconfig */,
+				74993D04927B8566F8B59F00 /* Pods-ViaflyProjectUITests.debug.xcconfig */,
+				1453D83797B5249334CC3197 /* Pods-ViaflyProjectUITests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39175021DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProject" */;
 			buildPhases = (
-				5436C4262E8C275DCE64A69A /* [CP] Check Pods Manifest.lock */,
+				5FCE1E8A6227B7963031A978 /* [CP] Check Pods Manifest.lock */,
 				C39174D61DB8400400B17FFC /* Sources */,
 				C39174D71DB8400400B17FFC /* Frameworks */,
 				C39174D81DB8400400B17FFC /* Resources */,
-				0F65297954066DDC737F622D /* [CP] Embed Pods Frameworks */,
-				E295DE392ACDD0E473BE428A /* [CP] Copy Pods Resources */,
+				1FDB0D7F96386748BCF305D6 /* [CP] Embed Pods Frameworks */,
+				B6EEBA64ED4205745BB56B65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39175051DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProjectTests" */;
 			buildPhases = (
-				7B225403B71DC232B22D5974 /* [CP] Check Pods Manifest.lock */,
+				77FD3787EA131AD70FE15B5F /* [CP] Check Pods Manifest.lock */,
 				C39174EA1DB8400500B17FFC /* Sources */,
 				C39174EB1DB8400500B17FFC /* Frameworks */,
 				C39174EC1DB8400500B17FFC /* Resources */,
-				0DCE09CEA80484703794C0F4 /* [CP] Embed Pods Frameworks */,
-				BBD2C6A639A47D06689985E3 /* [CP] Copy Pods Resources */,
+				E924011290C5C392C0F3E177 /* [CP] Embed Pods Frameworks */,
+				C47C64639B1B0AA01CBFF7C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,11 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39175081DB8400500B17FFC /* Build configuration list for PBXNativeTarget "ViaflyProjectUITests" */;
 			buildPhases = (
-				8EE2A878E327B459D9E1A0ED /* [CP] Check Pods Manifest.lock */,
+				40AA214BDBD3377C969C78B1 /* [CP] Check Pods Manifest.lock */,
 				C39174F51DB8400500B17FFC /* Sources */,
 				C39174F61DB8400500B17FFC /* Frameworks */,
 				C39174F71DB8400500B17FFC /* Resources */,
-				7935D733E2DB267F0BAE20B8 /* [CP] Copy Pods Resources */,
+				81D96519E88024CC4D738C54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,22 +318,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DCE09CEA80484703794C0F4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0F65297954066DDC737F622D /* [CP] Embed Pods Frameworks */ = {
+		1FDB0D7F96386748BCF305D6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,7 +333,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5436C4262E8C275DCE64A69A /* [CP] Check Pods Manifest.lock */ = {
+		40AA214BDBD3377C969C78B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,7 +348,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7935D733E2DB267F0BAE20B8 /* [CP] Copy Pods Resources */ = {
+		5FCE1E8A6227B7963031A978 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77FD3787EA131AD70FE15B5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81D96519E88024CC4D738C54 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,37 +393,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProjectUITests/Pods-ViaflyProjectUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B225403B71DC232B22D5974 /* [CP] Check Pods Manifest.lock */ = {
+		B6EEBA64ED4205745BB56B65 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8EE2A878E327B459D9E1A0ED /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BBD2C6A639A47D06689985E3 /* [CP] Copy Pods Resources */ = {
+		C47C64639B1B0AA01CBFF7C2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,19 +423,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E295DE392ACDD0E473BE428A /* [CP] Copy Pods Resources */ = {
+		E924011290C5C392C0F3E177 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProject/Pods-ViaflyProject-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViaflyProjectTests/Pods-ViaflyProjectTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -582,10 +594,14 @@
 		};
 		C39175031DB8400500B17FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BE0FAA83A0CA043093478E7 /* Pods-ViaflyProject.debug.xcconfig */;
+			baseConfigurationReference = 6F7B5B6B2BB7EA2243B996D6 /* Pods-ViaflyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ViaflyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProject;
@@ -596,10 +612,14 @@
 		};
 		C39175041DB8400500B17FFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FD59EF59BF88EBBF8FE083B /* Pods-ViaflyProject.release.xcconfig */;
+			baseConfigurationReference = 1F72CBC3EBAB69233760A955 /* Pods-ViaflyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ViaflyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vitkiarts.ViaflyProject;
@@ -610,7 +630,7 @@
 		};
 		C39175061DB8400500B17FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B2198427AB7F0148B0514F8 /* Pods-ViaflyProjectTests.debug.xcconfig */;
+			baseConfigurationReference = 7D68FEE9C6B21DC420E6ED0D /* Pods-ViaflyProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,7 +646,7 @@
 		};
 		C39175071DB8400500B17FFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD9AE2F44A9F641CAF270663 /* Pods-ViaflyProjectTests.release.xcconfig */;
+			baseConfigurationReference = 1B3C4E3DB4A7B8AB50D7F022 /* Pods-ViaflyProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -642,7 +662,7 @@
 		};
 		C39175091DB8400500B17FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0ABCBC2585EA8ED3883D584 /* Pods-ViaflyProjectUITests.debug.xcconfig */;
+			baseConfigurationReference = 74993D04927B8566F8B59F00 /* Pods-ViaflyProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
@@ -657,7 +677,7 @@
 		};
 		C391750A1DB8400500B17FFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77CAFA0C66006A9FDD30B02A /* Pods-ViaflyProjectUITests.release.xcconfig */;
+			baseConfigurationReference = 1453D83797B5249334CC3197 /* Pods-ViaflyProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5P4CM4ZFAJ;
