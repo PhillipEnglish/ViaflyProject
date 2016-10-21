@@ -12,7 +12,7 @@ import RxCocoa
 
 
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -46,6 +46,7 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK:- UI Element Relevant Methods
     
     func setupUI() {
         self.title = "Available Items"
@@ -87,6 +88,7 @@ class MainViewController: UIViewController {
     }
     
     
+    //MARK:- Action Buttons
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         
@@ -102,6 +104,27 @@ class MainViewController: UIViewController {
         default:
             break
         }
+    }
+    
+  //MARK: - Popover Delegate Methods
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "popover" {
+            let popoverVC = segue.destination as! PopoverViewController
+            popoverVC.preferredContentSize = CGSize(width: 200, height: 320)
+            
+            let popover = popoverVC.popoverPresentationController
+            
+            if popover != nil
+            {
+                popover!.delegate = self
+                popoverVC.mainVC = self 
+            }
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
    
 }

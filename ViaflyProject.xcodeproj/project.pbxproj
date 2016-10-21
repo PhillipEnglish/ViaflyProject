@@ -30,6 +30,7 @@
 		C39174E81DB8400400B17FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39174E61DB8400400B17FFC /* LaunchScreen.storyboard */; };
 		C39174F31DB8400500B17FFC /* ViaflyProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174F21DB8400500B17FFC /* ViaflyProjectTests.swift */; };
 		C39174FE1DB8400500B17FFC /* ViaflyProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */; };
+		C397F4001DB9B9E800A34393 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397F3FF1DB9B9E800A34393 /* PopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		C39174F91DB8400500B17FFC /* ViaflyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViaflyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39174FD1DB8400500B17FFC /* ViaflyProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaflyProjectUITests.swift; sourceTree = "<group>"; };
 		C39174FF1DB8400500B17FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C397F3FF1DB9B9E800A34393 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				C39174DF1DB8400400B17FFC /* MainViewController.swift */,
+				C397F3FF1DB9B9E800A34393 /* PopoverViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				C35350351DB84ACC008F287A /* ItemViewModel.swift in Sources */,
 				C39174E01DB8400400B17FFC /* MainViewController.swift in Sources */,
 				C39174DE1DB8400400B17FFC /* AppDelegate.swift in Sources */,
+				C397F4001DB9B9E800A34393 /* PopoverViewController.swift in Sources */,
 				C366B3D41DB91E2400484502 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -101,7 +101,6 @@
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="enableSegment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Opb-Yb-jMF"/>
                                     <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FXA-NO-hpH"/>
                                 </connections>
                             </segmentedControl>
@@ -121,7 +120,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="8oR-Eo-lcx">
-                        <barButtonItem key="rightBarButtonItem" title="Categories" id="RVB-Gk-A9b"/>
+                        <barButtonItem key="rightBarButtonItem" title="Categories" id="RVB-Gk-A9b">
+                            <connections>
+                                <segue destination="mo0-Qf-0oH" kind="popoverPresentation" identifier="popover" popoverAnchorBarButtonItem="RVB-Gk-A9b" id="SF9-QX-QoE">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="LD3-L8-i3E" id="oCI-0f-7Dx"/>
@@ -133,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="860" y="105.69715142428787"/>
         </scene>
-        <!--View Controller-->
+        <!--Popover View Controller-->
         <scene sceneID="rwU-1H-1VC">
             <objects>
-                <viewController id="mo0-Qf-0oH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopoverViewController" id="mo0-Qf-0oH" customClass="PopoverViewController" customModule="ViaflyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vfa-3X-nMH"/>
                         <viewControllerLayoutGuide type="bottom" id="0Ch-SL-Fwb"/>
