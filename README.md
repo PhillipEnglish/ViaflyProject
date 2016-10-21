@@ -1,7 +1,7 @@
 #ViaflyProject
 ##A test project for Viafly by Phillip English
 
-This simple project is built on an MVVM backbone so that it can easily grow in a modular fashion with the addition of more complex requirements and data. It makes generous use of the function-reactive paradigm for a UI that is dynamic and code that is clean and easy to scale.
+This simple project is built on an MVVM backbone so that it can easily grow in a modular fashion with the addition of more complex requirements and data. It makes generous use of the functional-reactive paradigm for a UI that is dynamic and code that is clean and easy to scale.
 
 *__To Run__: please open xcworkspace and not xcodeproj to run in simulator or device*
 
