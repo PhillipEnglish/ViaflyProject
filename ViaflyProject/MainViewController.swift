@@ -55,14 +55,14 @@ class MainViewController: UIViewController {
         ]
         self.navigationController?.navigationBar.titleTextAttributes = attributes
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
 
         
     }
  
     func setupSearchBar(){
-        searchBar.rx.text.throttle(0.3, scheduler: MainScheduler.instance).distinctUntilChanged().subscribeNext { [unowned self] (query) in
+        searchBar.rx.text.throttle(0.5, scheduler: MainScheduler.instance).distinctUntilChanged().subscribeNext { [unowned self] (query) in
          let newArray =    self.itemVM.itemArray.value.filter{$0.item.contains(query)}
             
         if newArray.count > 0 {
@@ -70,7 +70,10 @@ class MainViewController: UIViewController {
         }
         else
         {
+            self.itemVM.itemArray.value.removeAll()
             self.itemVM.populateArray()
+            //self.dismissKeyboard()
+            //self.searchBar.text = "Search for item"
         }
             
     }.addDisposableTo(disposeBag)
@@ -89,11 +92,11 @@ class MainViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-            print("first segment clicked")
+            //print("first segment clicked")
             itemVM.itemArray.value.sort{$0.priceDouble > $1.priceDouble}
 
         case 1:
-            print("second segment clicked")
+            //print("second segment clicked")
             itemVM.itemArray.value.sort{$0.priceDouble < $1.priceDouble}
 
         default:
