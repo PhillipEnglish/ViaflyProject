@@ -17,7 +17,7 @@ struct ItemModel {
     let price: String
     
     //set priceDouble with default value incase optional value is nil on init
-    //priceDouble exists to solve issues with sorting by price as a string
+    //priceDouble exists to solve issues with sorting by price as a string (example: 54 is > 530 when sorted by string)
     var priceDouble: Double = 0
     
     

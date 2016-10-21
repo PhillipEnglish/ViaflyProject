@@ -13,7 +13,7 @@ import RxCocoa
 
 class ItemViewModel {
     
-    //var itemArray: [ItemModel] = []
+    
     var itemArray = Variable<[ItemModel]>([])
     var storageArray = [ItemModel]()
     
@@ -22,7 +22,7 @@ class ItemViewModel {
         let importer = CSVImporter<[String: String]>(path: path)
         importer.startImportingRecords(structure: { (headerValues) -> Void in
             
-            print(headerValues) // => ["firstName", "lastName"]
+            //print(headerValues)
             
         }) { $0 }.onFinish { importedItems in
             
