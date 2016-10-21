@@ -54,6 +54,9 @@ class MainViewController: UIViewController {
             NSFontAttributeName: UIFont(name: "Avenir Next", size: 16)!
         ]
         self.navigationController?.navigationBar.titleTextAttributes = attributes
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
 
         
     }
@@ -73,6 +76,14 @@ class MainViewController: UIViewController {
     }.addDisposableTo(disposeBag)
         
     }
+    
+    
+    func dismissKeyboard() {
+        
+        view.endEditing(true)
+    }
+    
+    
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         
