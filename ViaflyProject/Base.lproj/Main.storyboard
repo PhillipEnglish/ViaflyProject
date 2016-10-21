@@ -146,19 +146,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ck-Jr-Cem">
-                                <state key="normal" title="Accessories"/>
+                                <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Accessories">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDq-sq-Zo4">
-                                <state key="normal" title="Outerwear"/>
+                                <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Outerwear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fe-6a-YYs">
-                                <state key="normal" title="Women's"/>
+                                <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Women's">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq8-3l-lEj">
-                                <state key="normal" title="All"/>
+                                <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="All">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rez-kb-Iws">
-                                <state key="normal" title="Men's"/>
+                                <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Men's">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
