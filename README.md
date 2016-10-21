@@ -25,11 +25,17 @@ The key component of this application is the reactive tableview.  Using RxSwift 
 
 >Sort the items by price
 
-![]("http://www.netanimations.net/Moving-picture-green-skeleton-animated-gif.gif")
+![]("https://raw.githubusercontent.com/PhillipEnglish/ViaflyProject/master/Gif1.gif")
 
 Here I use a simple segment controller to sort the data array by price
 
 > Search the items by name
+
+![]("https://raw.githubusercontent.com/PhillipEnglish/ViaflyProject/master/Gif2.gif")
+
+Here I've implemented a reactive search bar that displays results that contain the query.  When no results are found, it returns the original dataset: This is one part of the application where there's room for improvement.  Later I'd like to inform the user that no results were found.
+
+
 
 
 
