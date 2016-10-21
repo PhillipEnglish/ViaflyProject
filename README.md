@@ -54,7 +54,7 @@ In this app I've used the following dependencies: **RxSwift/RxCocoa**, for the r
 ###Business logic and opportunities for optimization
 I've focused on concerns of modularity and scalability, assuming that the data may change and requirements may expand at a later date: MVVM allows me to easily make changes to the model class without worrying much about changing the view and view controller.  
 
-If given more time, I believe there's a more elegant solution to the category sorting: Currently I repopulate the array every time a category changes: This may come with a performance cost if the app was pulling it's data from a web api.  I would like to optimize this.
+If given more time, I believe there's a more elegant solution to the category sorting: Currently I repopulate the array every time a category changes. This may come with a performance cost if the app was pulling it's data from a web api.  I would like to optimize this.
 
 Additionally, to prevent calling a populate method when search returns no results, I have a duplicate array storing values that is assigned to the data model to avoid calling the populate method.  A more elegant solution may be to have this data conform to a type that can be cached (and thus deallocated if there are memory issues) or optimizing the populate method (particularly if it become an API Call)
 
