@@ -21,9 +21,17 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     let itemVM = ItemViewModel()
     let disposeBag = DisposeBag()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         itemVM.populateArray()
+        
+        //Give the initial array time to load before populating the storageArray
+        //The storageArray exists to prevent the need to reload array when search results aren't found. In a more robust app we may want to store this in a cache or optimize the loading if via a network.
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1) )  {
+            self.itemVM.populateStorageArray()
+        }
+        
         setupUI()
         setupSearchBar()
         
@@ -58,23 +66,19 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
-
-        
     }
  
+    
     func setupSearchBar(){
+        //This throws a deprecation warning. The newer syntax is a little erratic and I'm keeping the older syntax until RxSwift gets more support for Swift3
         searchBar.rx.text.throttle(0.5, scheduler: MainScheduler.instance).distinctUntilChanged().subscribeNext { [unowned self] (query) in
          let newArray =    self.itemVM.itemArray.value.filter{$0.item.contains(query)}
             
         if newArray.count > 0 {
             self.itemVM.itemArray.value = newArray
         }
-        else
-        {
-            self.itemVM.itemArray.value.removeAll()
-            self.itemVM.populateArray()
-            //self.dismissKeyboard()
-            //self.searchBar.text = "Search for item"
+        else {
+            self.itemVM.resetArray()
         }
             
     }.addDisposableTo(disposeBag)
@@ -94,11 +98,9 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         switch sender.selectedSegmentIndex {
         case 0:
-            //print("first segment clicked")
             itemVM.itemArray.value.sort{$0.priceDouble > $1.priceDouble}
 
         case 1:
-            //print("second segment clicked")
             itemVM.itemArray.value.sort{$0.priceDouble < $1.priceDouble}
 
         default:
@@ -119,6 +121,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             {
                 popover!.delegate = self
                 popoverVC.itemVM = self.itemVM
+                
             }
         }
     }
@@ -128,5 +131,4 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     }
    
 }
-
 

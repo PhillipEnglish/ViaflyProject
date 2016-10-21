@@ -11,12 +11,10 @@ import UIKit
 class PopoverViewController: UIViewController {
     
     var itemVM: ItemViewModel?
-    var itemArrayHolder: [ItemModel] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemVM?.populateArray()
-        itemArrayHolder = (itemVM?.itemArray.value)!
+        
         // Do any additional setup after loading the view.
     }
 
@@ -25,51 +23,71 @@ class PopoverViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func actionHelper()
-    {
-       // itemVM?.itemArray.value.removeAll()
-        itemVM?.itemArray.value = itemArrayHolder
-        //itemVM?.populateArray()
+   
+    
+    @IBAction func accessoriesBttnTapped(_ sender: UIButton) {
+        itemVM?.populateArray()
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+            let newArray = self.itemVM?.itemArray.value.filter {$0.category.isAcessories}
+            
+            self.itemVM?.itemArray.value = newArray!
+            self.itemVM?.storageArray = newArray!
+            self.dismiss(animated: true, completion: nil)
+            
+        }
 
     }
     
-    @IBAction func accessoriesBttnTapped(_ sender: UIButton) {
-        actionHelper()
-        let newArray = itemVM?.itemArray.value.filter {$0.category.isAcessories}
-        itemVM?.itemArray.value = newArray!
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func mensBttnTapped(_ sender: UIButton) {
-        actionHelper()
-        let newArray = itemVM?.itemArray.value.filter {$0.category.isMens}
-        itemVM?.itemArray.value = newArray!
-        self.dismiss(animated: true, completion: nil)
+        itemVM?.populateArray()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+            let newArray = self.itemVM?.itemArray.value.filter {$0.category.isMens}
+            
+            self.itemVM?.itemArray.value = newArray!
+            self.itemVM?.storageArray = newArray!
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+
 
     }
     
     @IBAction func outerwearBttnTapped(_ sender: UIButton) {
-        actionHelper()
-        let newArray = itemVM?.itemArray.value.filter {$0.category.isOuterwear}
-        itemVM?.itemArray.value = newArray!
-        self.dismiss(animated: true, completion: nil)
+        itemVM?.populateArray()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+            let newArray = self.itemVM?.itemArray.value.filter {$0.category.isOuterwear}
+            
+            self.itemVM?.itemArray.value = newArray!
+            self.itemVM?.storageArray = newArray!
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+
 
     }
     
     @IBAction func womensBttnTapped(_ sender: UIButton) {
-        actionHelper()
-        let newArray =   itemVM?.itemArray.value.filter {$0.category.isWomens}
-        itemVM?.itemArray.value = newArray!
+        itemVM?.populateArray()
         
-        self.dismiss(animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+            let newArray = self.itemVM?.itemArray.value.filter {$0.category.isWomens}
+            
+            self.itemVM?.itemArray.value = newArray!
+            self.itemVM?.storageArray = newArray!
+            self.dismiss(animated: true, completion: nil)
+            
+        }
 
     }
     
     @IBAction func allBttnTapped(_ sender: UIButton) {
-        //actionHelper()
+      
         itemVM?.itemArray.value.removeAll()
         itemVM?.populateArray()
+    
         self.dismiss(animated: true, completion: nil)
 
     }

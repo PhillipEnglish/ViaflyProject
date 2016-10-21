@@ -15,6 +15,7 @@ class ItemViewModel {
     
     //var itemArray: [ItemModel] = []
     var itemArray = Variable<[ItemModel]>([])
+    var storageArray = [ItemModel]()
     
     func populateArray() {
         guard let path = Bundle.main.path(forResource: "Inventory", ofType: "csv") else {return}
@@ -34,7 +35,18 @@ class ItemViewModel {
                 print(self.itemArray.value.count)
             }
             self.itemArray.value.sort{$0.priceDouble > $1.priceDouble}
+            self.populateStorageArray()
         }
+    }
+    
+    func populateStorageArray()
+    {
+        storageArray = itemArray.value
+    }
+    
+    func resetArray()
+    {
+        itemArray.value = storageArray
     }
 
 }
