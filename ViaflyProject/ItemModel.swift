@@ -58,3 +58,4 @@ enum ItemCategory: String {
     case outerwear = "Outerwear"
     case womens = "Women's"
 }
+

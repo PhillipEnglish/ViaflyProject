@@ -24,6 +24,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         itemVM.populateArray()
+        setupUI()
+        setupSearchBar()
         
         itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell", cellType: ItemCell.self)) {
             row, itemModel, cell in
@@ -37,6 +39,7 @@ class MainViewController: UIViewController {
         }
         .addDisposableTo(disposeBag)
         
+        
     }
     
     
@@ -46,7 +49,32 @@ class MainViewController: UIViewController {
     }
 
     
+    func setupUI() {
+        self.title = "Available Items"
+        let attributes = [
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont(name: "Avenir Next", size: 16)!
+        ]
+        self.navigationController?.navigationBar.titleTextAttributes = attributes
+
+        
+    }
  
+    func setupSearchBar(){
+        searchBar.rx.text.throttle(0.3, scheduler: MainScheduler.instance).distinctUntilChanged()/*.filter{ $0.characters.count > 0 }*/.subscribeNext { [unowned self] (query) in
+         let newArray =    self.itemVM.itemArray.value.filter{$0.item.contains(query)}
+            
+        if newArray.count > 0 {
+            self.itemVM.itemArray.value = newArray
+        }
+        else
+        {
+            self.itemVM.populateArray()
+        }
+            
+    }.addDisposableTo(disposeBag)
+        
+    }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         
