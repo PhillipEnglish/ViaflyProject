@@ -6,7 +6,7 @@ This simple project is built on an MVVM backbone so that it can easily grow in a
 The key component of this application is the reactive tableview.  Using RxSwift and RxCocoa, I bind the tableview to an array of objects generated from the inventory.  This allows me to omit tableview delegate methods, cutting back the size of the main viewcontroller, and avoiding the need to reload the table every time the data changes. This means we can modify the datamodel directly without concern for tableview code, and the view will update reactively
 
 ###Here's the only tableview setup code in the app:
-```swift
+```
  //From ViewDidLoad in MainViewController:
         itemVM.itemArray.asObservable().observeOn(MainScheduler.instance).bindTo(tableView.rx.items(cellIdentifier: "ItemCell", cellType: ItemCell.self)) {
             row, itemModel, cell in
@@ -25,7 +25,7 @@ The key component of this application is the reactive tableview.  Using RxSwift 
 
 >Sort the items by price
 
-![]("http://i.giphy.com/qW314hUM91jDW.gif")
+![]("http://www.netanimations.net/Moving-picture-green-skeleton-animated-gif.gif")
 
 Here I use a simple segment controller to sort the data array by price
 
