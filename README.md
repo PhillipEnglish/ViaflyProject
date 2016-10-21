@@ -45,6 +45,7 @@ Here I've implemented a reactive search bar that displays results that contain t
 
 Categories are displayed in a popover, and selection filters the array by category.
 
+###Dependencies
 
 In this app I've used the following dependencies: **RxSwift/RxCocoa**, for the reasons listed above - to make the main view reactive, cutting down the amount of code to the MainViewController and placing concern for changes to the data solely on the model and viewModel
 
