@@ -157,6 +157,9 @@
                                 <state key="normal" title="Accessories">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accessoriesBttnTapped:" destination="mo0-Qf-0oH" eventType="touchUpInside" id="1jG-5L-fTY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDq-sq-Zo4">
                                 <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,6 +168,9 @@
                                 <state key="normal" title="Outerwear">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="outerwearBttnTapped:" destination="mo0-Qf-0oH" eventType="touchUpInside" id="s0n-y7-mJQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fe-6a-YYs">
                                 <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,6 +179,9 @@
                                 <state key="normal" title="Women's">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="womensBttnTapped:" destination="mo0-Qf-0oH" eventType="touchUpInside" id="apw-mE-Zh3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq8-3l-lEj">
                                 <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,6 +190,9 @@
                                 <state key="normal" title="All">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="allBttnTapped:" destination="mo0-Qf-0oH" eventType="touchUpInside" id="ls2-jM-UVD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rez-kb-Iws">
                                 <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -189,6 +201,9 @@
                                 <state key="normal" title="Men's">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mensBttnTapped:" destination="mo0-Qf-0oH" eventType="touchUpInside" id="YwC-v1-J53"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

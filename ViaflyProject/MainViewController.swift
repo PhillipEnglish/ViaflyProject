@@ -118,7 +118,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             if popover != nil
             {
                 popover!.delegate = self
-                popoverVC.mainVC = self 
+                popoverVC.itemVM = self.itemVM
             }
         }
     }
