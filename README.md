@@ -30,7 +30,7 @@ The key component of this application is the reactive tableview.  Using RxSwift 
 ![](https://raw.githubusercontent.com/PhillipEnglish/ViaflyProject/master/Gif1.gif)
 
 
-Here I use a simple segment controller to sort the data array by price. It is assumed that out of stock items are not relevant to the user, so items are only displayed if QTY is greater than zero.   It should be noted that some of the items in the inventory file have a price of $0.0. One question I have is: How would you want this case handled? To be comprehensive, I've left included them in the data model, but that does not seem correct for a production app.
+Here I use a simple segment controller to sort the data array by price. It is assumed that out of stock items are not relevant to the user, so items are only displayed if QTY is greater than zero.   It should be noted that some of the items in the inventory file have a price of $0.0. One question I have is: How would you want this case handled? To be comprehensive, I've included them in the data model, but that does not seem correct for a production app.
 
 
 > Search the items by name:
