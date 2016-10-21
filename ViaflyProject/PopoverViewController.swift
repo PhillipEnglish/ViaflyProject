@@ -26,9 +26,10 @@ class PopoverViewController: UIViewController {
    
     
     @IBAction func accessoriesBttnTapped(_ sender: UIButton) {
+        itemVM?.itemArray.value.removeAll()
         itemVM?.populateArray()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(150))  {
             let newArray = self.itemVM?.itemArray.value.filter {$0.category.isAcessories}
             
             self.itemVM?.itemArray.value = newArray!
@@ -40,9 +41,10 @@ class PopoverViewController: UIViewController {
     }
     
     @IBAction func mensBttnTapped(_ sender: UIButton) {
+        itemVM?.itemArray.value.removeAll()
         itemVM?.populateArray()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(150))  {
             let newArray = self.itemVM?.itemArray.value.filter {$0.category.isMens}
             
             self.itemVM?.itemArray.value = newArray!
@@ -55,9 +57,10 @@ class PopoverViewController: UIViewController {
     }
     
     @IBAction func outerwearBttnTapped(_ sender: UIButton) {
+        itemVM?.itemArray.value.removeAll()
         itemVM?.populateArray()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(150))  {
             let newArray = self.itemVM?.itemArray.value.filter {$0.category.isOuterwear}
             
             self.itemVM?.itemArray.value = newArray!
@@ -70,9 +73,10 @@ class PopoverViewController: UIViewController {
     }
     
     @IBAction func womensBttnTapped(_ sender: UIButton) {
+        itemVM?.itemArray.value.removeAll()
         itemVM?.populateArray()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(80))  {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(150))  {
             let newArray = self.itemVM?.itemArray.value.filter {$0.category.isWomens}
             
             self.itemVM?.itemArray.value = newArray!
