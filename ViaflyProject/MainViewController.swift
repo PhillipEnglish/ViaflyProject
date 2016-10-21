@@ -61,7 +61,7 @@ class MainViewController: UIViewController {
     }
  
     func setupSearchBar(){
-        searchBar.rx.text.throttle(0.3, scheduler: MainScheduler.instance).distinctUntilChanged()/*.filter{ $0.characters.count > 0 }*/.subscribeNext { [unowned self] (query) in
+        searchBar.rx.text.throttle(0.3, scheduler: MainScheduler.instance).distinctUntilChanged().subscribeNext { [unowned self] (query) in
          let newArray =    self.itemVM.itemArray.value.filter{$0.item.contains(query)}
             
         if newArray.count > 0 {
